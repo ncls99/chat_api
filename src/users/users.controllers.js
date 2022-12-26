@@ -36,9 +36,8 @@ const findUserByEmail = async (email) => {
     return data
 }
 
-
-
 const createUser = async (obj) =>{
+    console.log(obj.password)
     const data = await Users.create({
         id: uuid.v4(),
         firstName: obj.firstName,
@@ -50,6 +49,7 @@ const createUser = async (obj) =>{
 
     })
     return data
+    console.log(data)
 }
 
 const updateUser = async (id, obj) => {
