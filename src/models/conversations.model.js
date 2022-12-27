@@ -7,7 +7,7 @@ const Conversations = db.define('conversations', {
         type: DataTypes.UUID,
         primaryKey: true
     },
-    tittle: {
+    title: {
         type: DataTypes.STRING,
         allowNull: false
     },

@@ -16,6 +16,5 @@ const checkUsersCredentials = async (email, password) => {
     }
 }
 
-module.exports = {
+module.exports = 
     checkUsersCredentials
-}
